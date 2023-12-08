@@ -1,0 +1,87 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="YemekTarifleriWebSite.Admin" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Yemek Tarifleri</title>
+    <link href="Kullanici.css" rel="stylesheet" />
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style4 {
+            width: 100%;
+            font-family: "Segoe UI";
+        }
+
+        .auto-style3 {
+            font-size: large;
+            font-family: "Segoe UI";
+            color: #000000;
+        }
+
+        .auto-style5 {
+            background-color: #99CCFF;
+            font-family: "Segoe UI";
+        }
+
+        </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <%--görsel slider--%>
+        <div style="height: 150px; width: 700px; margin-left: 300px; background-color: #ce7171;">
+            <asp:Image ID="Image1" runat="server" Height="150px" ImageUrl="~/Resimler/adminbanner.jpg" Width="700px" />
+        </div>
+
+        <%-- boşluk divi --%>
+        <div style="margin-left: 300px; width: 700px; height: 20px; background-color: #FFFFFF;">&nbsp;</div>
+
+        <%--içerik--%>
+        <div style="margin-left: 300px; width: 700px; height: auto;">
+            <div style="width: 200px; height: auto; float: left; margin-left: 0px; " class="auto-style5">
+                <table class="auto-style4">
+                    <tr>
+                        <td class="auto-style3">
+                            <strong>MENÜLER</strong></td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #666666">KATEGORİLER</td>
+                    </tr>
+                    <tr>
+                        <td style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #666666">YEMEKLER</td>
+                    </tr>
+                    <tr>
+                        <td style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #666666">YORUMLAR</td>
+                    </tr>
+                    <tr>
+                        <td style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #666666">MESAJLAR</td>
+                    </tr>
+                    <tr>
+                        <td style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #666666">GÜNÜN YEMEĞİ</td>
+                    </tr>
+                    <tr>
+                        <td style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #666666">ÖNERİLER</td>
+                    </tr>
+                    <tr>
+                        <td style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #666666">HAKKIMIZDA</td>
+                    </tr>
+                </table>
+                <br />
+                <br />
+            </div>
+            <div style="width: 450px; height: auto; float: left; margin-left: 50px; " class="auto-style5">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+
+
+    </form>
+</body>
+</html>
+
