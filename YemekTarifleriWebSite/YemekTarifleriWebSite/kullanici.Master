@@ -1,0 +1,87 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="kullanici.master.cs" Inherits="YemekTarifleriWebSite.kullanici" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Yemek Tarifleri</title>
+    <link href="Kullanici.css" rel="stylesheet" />
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+            height: 38px;
+            font-family: "Segoe UI";
+        }
+
+        .auto-style3 {
+            font-size: large;
+            font-family: "Segoe UI";
+            color: #FFFF99;
+        }
+
+        .auto-style4 {
+            text-align: center;
+            font-weight: bold;
+            background-color: #eea4a4;
+            height: 37px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <%--görsel slider--%>
+        <div style="height: 150px; width: 700px; margin-left: 300px; background-color: #ce7171;">
+            <asp:Image ID="Image1" runat="server" Height="150px" ImageUrl="~/Resimler/header1.jpg" Width="700px" />
+        </div>
+
+        <%-- boşluk divi --%>
+        <div style="margin-left: 300px; width: 700px; height: 20px; background-color: #FFFFFF;">&nbsp;</div>
+
+        <%--menü--%>
+        <div style="margin-left: 300px; width: 700px; height: 40px; background-color: #FFFFFF; background-color: #FFFFFF">
+            <table class="auto-style1">
+                <tr>
+                    <td class="auto-style4"><a href="Anasayfa.aspx">ANA SAYFA</a></td>
+                    <td class="auto-style4"><a href="GununYemegi.aspx">GÜNÜN YEMEĞİ</a></td>
+                    <td class="auto-style4"><a href="TarifOner.aspx">TARİF ÖNER</a></td>
+                    <td class="auto-style4"><a href="Hakkimizda.aspx">HAKKIMIZDA</a></td>
+                    <td class="auto-style4"><a href="Iletisim.aspx">İLETİŞİM</a></td>
+                </tr>
+            </table>
+        </div>
+
+        <%-- boşluk divi --%>
+        <div style="margin-left: 300px; width: 700px; height: 20px; background-color: #FFFFFF;">&nbsp;</div>
+
+        <%--içerik--%>
+        <div style="margin-left: 300px; width: 700px; height: auto;">
+            <div style="width: 200px; height: auto; float: left; margin-left: 0px; background-color: #ce7171">
+                <span class="auto-style3"><strong>KATEGORİLER</strong></span><br />
+                <br />
+                <asp:DataList ID="DataList1" runat="server" Width="200px">
+                    <ItemTemplate>
+                        <div style="border: thin solid #CCCCCC; font-family: 'Segoe UI';">
+                            <a href="KategoriDetay.aspx?KategoriID=<%# Eval("KategoriID") %>">
+                                <strong>
+                            <asp:Label ID="Label1" runat="server" Text='<%# Eval("KategoriAd") %>'></asp:Label>
+                            </strong></a>
+                            &nbsp;(
+                            <asp:Label ID="Label2" runat="server" Text='<%# Eval("KategoriAdet") %>'></asp:Label>
+                            )
+                        </div>
+                    </ItemTemplate>
+                </asp:DataList>
+            </div>
+            <div style="width: 450px; height: auto; float: left; margin-left: 50px; background-color: #ce7171">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+
+
+    </form>
+</body>
+</html>
