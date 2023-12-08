@@ -1,1 +1,1 @@
-# YemekTarifiSitesi
+# Yemek Tarifleri Sitesi
