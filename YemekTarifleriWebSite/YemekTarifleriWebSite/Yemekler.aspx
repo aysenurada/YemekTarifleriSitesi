@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Admin.Master" AutoEventWireup="true" CodeBehind="Kategoriler.aspx.cs" Inherits="YemekTarifleriWebSite.Kategoriler" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Admin.Master" AutoEventWireup="true" CodeBehind="Yemekler.aspx.cs" Inherits="YemekTarifleriWebSite.Yemekler" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style type="text/css">
@@ -17,7 +17,7 @@
 
         .auto-style11 {
             text-align: left;
-            width: 230px;
+            width: 223px;
         }
 
         .auto-style13 {
@@ -41,6 +41,15 @@
             font-size: large;
             font-weight: bold;
             background-color: #FFFF99;
+            border: none;
+            cursor: pointer;
+        }
+        .auto-style18 {
+            text-align: center;
+        }
+
+        .auto-style19 {
+            font-family: "Segoe UI";
         }
     </style>
 </asp:Content>
@@ -49,12 +58,12 @@
         <table class="auto-style7">
             <tr>
                 <td class="auto-style14"><strong>
-                    <asp:Button ID="Button1" runat="server" BackColor="#FFFFCC" BorderStyle="None" CssClass="auto-style13" Height="30px" OnClick="Button1_Click" Text="+" Width="30px" />
+                    <asp:Button ID="Button1" runat="server" BackColor="#FFFFCC" BorderStyle="None" CssClass="auto-style13" Height="30px" Text="+" Width="30px" OnClick="Button1_Click" />
                 </strong></td>
                 <td class="auto-style15"><strong>
-                    <asp:Button ID="Button2" runat="server" BackColor="#FFFFCC" BorderStyle="None" CssClass="auto-style13" Height="30px" OnClick="Button2_Click" Text="-" Width="30px" />
+                    <asp:Button ID="Button2" runat="server" BackColor="#FFFFCC" BorderStyle="None" CssClass="auto-style13" Height="30px" Text="-" Width="30px" OnClick="Button2_Click" />
                 </strong></td>
-                <td><strong><span class="auto-style6">KATEGORİ LİSTESİ</span></strong></td>
+                <td><strong><span class="auto-style6">YEMEK LİSTESİ</span></strong></td>
             </tr>
         </table>
     </asp:Panel>
@@ -64,14 +73,14 @@
                 <table class="auto-style7">
                     <tr>
                         <td class="auto-style11">
-                            <asp:Label ID="Label1" runat="server" Text='<%# Eval("KategoriAd") %>'></asp:Label>
+                            <asp:Label ID="Label1" runat="server" Text='<%# Eval("YemekAd") %>'></asp:Label>
                         </td>
                         <td class="auto-style10">
-                            <a href="Kategoriler.aspx?KategoriID=<%# Eval("KategoriID") %>&islem=sil">
+                            <a href="Yemekler.aspx?YemekID=<%# Eval("YemekID") %>&islem=sil">
                                 <asp:Image ID="Image2" runat="server" Height="30px" ImageUrl="~/Resimler/delete.png" Width="30px" /></a>
                         </td>
                         <td class="auto-style16">
-                            <a href="KategoriDuzenle.aspx?KategoriID=<%# Eval("KategoriID") %>">
+                            <a href="YemekDuzenle.aspx?YemekID=<%# Eval("YemekID") %>">
                                 <asp:Image ID="Image3" runat="server" Height="30px" ImageUrl="~/Resimler/update.png" Width="30px" /></a>
                         </td>
                     </tr>
@@ -90,7 +99,7 @@
                     <td class="auto-style15"><strong>
                         <asp:Button ID="Button4" runat="server" BackColor="#FFFFCC" BorderStyle="None" CssClass="auto-style13" Height="30px" Text="-" Width="30px" OnClick="Button4_Click" />
                     </strong></td>
-                    <td><strong><span class="auto-style6">KATEGORİ EKLEME</span></strong></td>
+                    <td><strong><span class="auto-style6">YEMEK EKLEME</span></strong></td>
                 </tr>
             </table>
         </asp:Panel>
@@ -98,23 +107,37 @@
     <asp:Panel ID="Panel5" runat="server">
         <table class="auto-style7">
             <tr>
-                <td>Kategori Ad:</td>
+                <td class="auto-style16">Yemek Ad:</td>
                 <td>
-                    <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="TextBox1" runat="server" Height="30px" Width="300px"></asp:TextBox>
                 </td>
             </tr>
             <tr>
-                <td>Kategori İkon:</td>
+                <td class="auto-style16">Malzemeler:</td>
                 <td>
-                    <asp:FileUpload ID="FileUpload1" runat="server" />
+                    <asp:TextBox ID="TextBox2" runat="server" Height="100px" TextMode="MultiLine" Width="300px" CssClass="auto-style19" ></asp:TextBox>
                 </td>
             </tr>
             <tr>
-                <td>&nbsp;</td>
-                <td><strong>
-                    <asp:Button ID="BtnEkle" runat="server" CssClass="auto-style17" Height="40px" Text="Ekle" Width="130px" OnClick="BtnEkle_Click" BackColor="#FFFF99" />
-                </strong></td>
+                <td class="auto-style16">Tarif:</td>
+                <td>
+                    <asp:TextBox ID="TextBox3" runat="server" Height="200px" TextMode="MultiLine" Width="300px" CssClass="auto-style19" ></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style16">Kategori:</td>
+                <td>
+                    <asp:DropDownList ID="DropDownList1" runat="server" Height="30px" Width="300px">
+                    </asp:DropDownList>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style16">&nbsp;</td>
+                <td class="auto-style18"><strong>
+                    <asp:Button ID="BtnEkle" runat="server" BackColor="#FFFF66" CssClass="auto-style17" Height="40px" Text="Ekle" Width="130px" OnClick="BtnEkle_Click" />
+                    </strong></td>
             </tr>
         </table>
     </asp:Panel>
 </asp:Content>
+

@@ -50,10 +50,10 @@
                         <td>&nbsp;</td>
                     </tr>
                     <tr>
-                        <td style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #666666">KATEGORİLER</td>
+                        <td style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #666666"><a href="Kategoriler.aspx">KATEGORİLER</a></td>
                     </tr>
                     <tr>
-                        <td style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #666666">YEMEKLER</td>
+                        <td style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #666666"><a href="Yemekler.aspx">YEMEKLER</a></td>
                     </tr>
                     <tr>
                         <td style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #666666">YORUMLAR</td>
