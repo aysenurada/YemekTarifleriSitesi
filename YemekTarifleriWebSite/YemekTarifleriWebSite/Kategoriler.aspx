@@ -112,7 +112,7 @@
             <tr>
                 <td>&nbsp;</td>
                 <td><strong>
-                    <asp:Button ID="BtnEkle" runat="server" CssClass="auto-style17" Height="40px" Text="Ekle" Width="130px" OnClick="BtnEkle_Click" BackColor="#FFFF99" />
+                    <asp:Button ID="BtnEkle" runat="server" CssClass="auto-style17" Height="40px" Text="Ekle" Width="130px" OnClick="BtnEkle_Click" BackColor="#FFFF99" BorderStyle="None" />
                 </strong></td>
             </tr>
         </table>

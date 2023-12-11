@@ -18,6 +18,12 @@
         .auto-style9 {
             text-align: center;
         }
+        .auto-style10 {
+            font-size: medium;
+            font-weight: bold;
+            cursor: pointer;
+            border: none;
+        }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -52,10 +58,24 @@
             </td>
         </tr>
         <tr>
+            <td class="auto-style7"><strong>Görsel:</strong></td>
+            <td>
+                <asp:FileUpload ID="FileUpload1" runat="server" Height="30px" Width="230px" />
+            </td>
+        </tr>
+        <tr>
             <td class="auto-style7">&nbsp;</td>
             <td class="auto-style9">
                 <strong>
                 <asp:Button ID="BtnGuncelle" runat="server" Text="Güncelle" BackColor="#FFFF66" CssClass="auto-style8" Height="50px" Width="110px" OnClick="BtnGuncelle_Click" />
+                </strong>
+            </td>
+        </tr>
+        <tr>
+            <td class="auto-style7">&nbsp;</td>
+            <td class="auto-style9">
+                <strong>
+                <asp:Button ID="BtnGununYemegi" runat="server" BackColor="#FFCC66" CssClass="auto-style10" Height="40px" Text="Günün Yemeği Seç" OnClick="BtnGununYemegi_Click" />
                 </strong>
             </td>
         </tr>

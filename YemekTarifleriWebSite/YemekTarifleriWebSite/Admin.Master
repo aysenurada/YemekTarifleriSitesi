@@ -56,19 +56,19 @@
                         <td style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #666666"><a href="Yemekler.aspx">YEMEKLER</a></td>
                     </tr>
                     <tr>
-                        <td style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #666666">YORUMLAR</td>
+                        <td style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #666666"><a href="Yorumlar.aspx">YORUMLAR</a></td>
                     </tr>
                     <tr>
-                        <td style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #666666">MESAJLAR</td>
+                        <td style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #666666"><a href="Mesajlar.aspx">MESAJLAR</a></td>
                     </tr>
                     <tr>
-                        <td style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #666666">GÜNÜN YEMEĞİ</td>
+                        <td style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #666666"><a href="GununYemegiAdmin.aspx">GÜNÜN YEMEĞİ</a></td>
                     </tr>
                     <tr>
-                        <td style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #666666">ÖNERİLER</td>
+                        <td style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #666666"><a href="Tarifler.aspx">TARİFLER</a></td>
                     </tr>
                     <tr>
-                        <td style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #666666">HAKKIMIZDA</td>
+                        <td style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #666666"><a href="HakkimizdaAdmin.aspx">HAKKIMIZDA</a></td>
                     </tr>
                 </table>
                 <br />
