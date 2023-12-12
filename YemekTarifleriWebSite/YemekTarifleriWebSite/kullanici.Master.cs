@@ -14,9 +14,14 @@ namespace YemekTarifleriWebSite
         protected void Page_Load(object sender, EventArgs e)
         {
             SqlCommand komut = new SqlCommand("Select * From TblKategoriler", bgl.baglanti());
-            SqlDataReader oku = komut.ExecuteReader();
-            DataList1.DataSource = oku;
-            DataList1.DataBind();
+
+            try
+            {
+                SqlDataReader oku = komut.ExecuteReader();
+                DataList1.DataSource = oku;
+                DataList1.DataBind();
+            }
+            catch { }
         }
     }
 }
