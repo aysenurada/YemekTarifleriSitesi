@@ -15,6 +15,6 @@
 - Microsoft SQL Server Studio
 
 ### Projeye Ait Görseller
-![kullanıcı anasayfa]("\YemekTarifleriGithub\anasayfa.png")
-![kullanıcı gunun yemegi]("\YemekTarifleriGithub\gununyemegi.png")
-![kullanıcı tarif oner]("\YemekTarifleriGithub\tarifoner.png")
+![kullanıcı_anasayfa]("/YemekTarifleriGithub/anasayfa.png")
+![kullanıcı_gunun yemegi]("")
+![kullanıcı_tarif_oner]("")
