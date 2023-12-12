@@ -12,7 +12,7 @@ namespace YemekTarifleriWebSite
     public partial class KategoriAdminDetay : System.Web.UI.Page
     {
         sqlbaglanti bgl = new sqlbaglanti();
-        string id;
+        string id = "";
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -20,6 +20,7 @@ namespace YemekTarifleriWebSite
 
             if (Page.IsPostBack == false)
             {
+
                 SqlCommand komut = new SqlCommand("Select * From TblKategoriler Where KategoriID = @p1", bgl.baglanti());
 
                 komut.Parameters.AddWithValue("@p1", id);
@@ -31,7 +32,6 @@ namespace YemekTarifleriWebSite
                     while (dr.Read())
                     {
                         TextBox1.Text = dr[1].ToString();
-                        TextBox2.Text = dr[2].ToString();
                     }
 
                     bgl.baglanti().Close();
@@ -42,9 +42,11 @@ namespace YemekTarifleriWebSite
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            SqlCommand cmd = new SqlCommand("Update TblKategoriler Set KategoriID = @p1, KategoriAdet = @p2 Where KategoriID = @p3", bgl.baglanti());
+            FileUpload1.SaveAs(Server.MapPath("/Resimler/" + FileUpload1.FileName));
+
+            SqlCommand cmd = new SqlCommand("Update TblKategoriler Set KategoriAd= @p1, KategoriResim = @p2 Where KategoriID = @p3", bgl.baglanti());
             cmd.Parameters.AddWithValue("@p1", TextBox1.Text);
-            cmd.Parameters.AddWithValue("@p2", TextBox2.Text);
+            cmd.Parameters.AddWithValue("@p2", "~/Resimler/" + FileUpload1.FileName);
             cmd.Parameters.AddWithValue("@p3", id);
             cmd.ExecuteNonQuery();
             bgl.baglanti().Close();

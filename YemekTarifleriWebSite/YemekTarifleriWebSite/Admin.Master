@@ -13,6 +13,7 @@
         .auto-style4 {
             width: 100%;
             font-family: "Segoe UI";
+            padding: 12px;
         }
 
         .auto-style3 {
@@ -24,6 +25,18 @@
         .auto-style5 {
             background-color: #99CCFF;
             font-family: "Segoe UI";
+        }
+
+        .auto-style6 {
+            height: 25px;
+            font-size: large;
+        }
+        .auto-style7 {
+            font-size: large;
+        }
+
+        .auto-style8 {
+            font-size: large;
         }
 
         </style>
@@ -50,25 +63,25 @@
                         <td>&nbsp;</td>
                     </tr>
                     <tr>
-                        <td style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #666666"><a href="Kategoriler.aspx">KATEGORİLER</a></td>
+                        <td style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #666666" class="auto-style7"><a href="Kategoriler.aspx" class="auto-style8">KATEGORİLER</a></td>
                     </tr>
                     <tr>
-                        <td style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #666666"><a href="Yemekler.aspx">YEMEKLER</a></td>
+                        <td style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #666666" class="auto-style6"><a href="Yemekler.aspx" class="auto-style7">YEMEKLER</a></td>
                     </tr>
                     <tr>
-                        <td style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #666666"><a href="Yorumlar.aspx">YORUMLAR</a></td>
+                        <td style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #666666" class="auto-style7"><a href="Yorumlar.aspx" class="auto-style7">YORUMLAR</a></td>
                     </tr>
                     <tr>
-                        <td style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #666666"><a href="Mesajlar.aspx">MESAJLAR</a></td>
+                        <td style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #666666" class="auto-style7"><a href="Mesajlar.aspx" class="auto-style7">MESAJLAR</a></td>
                     </tr>
                     <tr>
-                        <td style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #666666"><a href="GununYemegiAdmin.aspx">GÜNÜN YEMEĞİ</a></td>
+                        <td style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #666666" class="auto-style7"><a href="GununYemegiAdmin.aspx" class="auto-style7">GÜNÜN YEMEĞİ</a></td>
                     </tr>
                     <tr>
-                        <td style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #666666"><a href="Tarifler.aspx">TARİFLER</a></td>
+                        <td style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #666666" class="auto-style7"><a href="Tarifler.aspx" class="auto-style7">TARİFLER</a></td>
                     </tr>
                     <tr>
-                        <td style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #666666"><a href="HakkimizdaAdmin.aspx">HAKKIMIZDA</a></td>
+                        <td style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #666666" class="auto-style6"><a href="HakkimizdaAdmin.aspx" class="auto-style7">HAKKIMIZDA</a></td>
                     </tr>
                 </table>
                 <br />

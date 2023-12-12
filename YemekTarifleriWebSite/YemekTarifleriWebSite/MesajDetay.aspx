@@ -18,25 +18,25 @@
         <tr>
             <td class="auto-style7"><strong>Mesaj Gönderen:</strong></td>
             <td>
-                <asp:TextBox ID="TextBox1" runat="server" Height="30px" Width="250px"></asp:TextBox>
+                <asp:TextBox ID="TextBox1" runat="server" Height="30px" Width="250px" BorderStyle="None" style="border-radius: 2px;" ></asp:TextBox>
             </td>
         </tr>
         <tr>
             <td class="auto-style7"><strong>Mail Adresi:</strong></td>
             <td>
-                <asp:TextBox ID="TextBox2" runat="server" Height="30px" Width="250px"></asp:TextBox>
+                <asp:TextBox ID="TextBox2" runat="server" Height="30px" Width="250px" BorderStyle="None" style="border-radius: 2px;" ></asp:TextBox>
             </td>
         </tr>
         <tr>
             <td class="auto-style7"><strong>Başlık:</strong></td>
             <td>
-                <asp:TextBox ID="TextBox3" runat="server" Height="30px" Width="250px"></asp:TextBox>
+                <asp:TextBox ID="TextBox3" runat="server" Height="30px" Width="250px" BorderStyle="None" style="border-radius: 2px;" ></asp:TextBox>
             </td>
         </tr>
         <tr>
             <td class="auto-style7"><strong>İçerik:</strong></td>
             <td>
-                <asp:TextBox ID="TextBox4" runat="server" Height="200px" TextMode="MultiLine" Width="250px"></asp:TextBox>
+                <asp:TextBox ID="TextBox4" runat="server" Height="200px" TextMode="MultiLine" Width="250px" BorderStyle="None" style="border-radius: 2px; font-family: 'Segoe UI'" ></asp:TextBox>
             </td>
         </tr>
         <tr>

@@ -59,18 +59,16 @@
         <%--içerik--%>
         <div style="margin-left: 300px; width: 700px; height: auto;">
             <div style="width: 200px; height: auto; float: left; margin-left: 0px; background-color: #ce7171">
-                <span class="auto-style3"><strong>KATEGORİLER</strong></span><br />
+                <span class="auto-style3"><strong>&nbsp;
+                <br />
+                    &nbsp; KATEGORİLER</strong></span><br />
                 <br />
                 <asp:DataList ID="DataList1" runat="server" Width="200px">
                     <ItemTemplate>
-                        <div style="border: thin solid #CCCCCC; font-family: 'Segoe UI';">
-                            <a href="KategoriDetay.aspx?KategoriID=<%# Eval("KategoriID") %>">
-                                <strong>
-                            <asp:Label ID="Label1" runat="server" Text='<%# Eval("KategoriAd") %>'></asp:Label>
+                        <div style="font-family: 'Segoe UI';">
+                            <asp:Image ID="Image2" runat="server" Height="20px" ImageUrl='<%# Eval("KategoriResim") %>' Width="20px" />
+                            &nbsp;<a href="KategoriDetay.aspx?KategoriID=<%# Eval("KategoriID") %>"><strong><asp:Label ID="Label1" runat="server" Text='<%# Eval("KategoriAd") %>' ></asp:Label>
                             </strong></a>
-                            &nbsp;(
-                            <asp:Label ID="Label2" runat="server" Text='<%# Eval("KategoriAdet") %>'></asp:Label>
-                            )
                         </div>
                     </ItemTemplate>
                 </asp:DataList>

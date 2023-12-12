@@ -43,6 +43,7 @@
             background-color: #FFFF99;
             border: none;
             cursor: pointer;
+            border-radius: 2px;
         }
         .auto-style18 {
             text-align: center;
@@ -50,6 +51,7 @@
 
         .auto-style19 {
             font-family: "Segoe UI";
+            border-radius: 2px;
         }
     </style>
 </asp:Content>
@@ -109,19 +111,19 @@
             <tr>
                 <td class="auto-style16">Yemek Ad:</td>
                 <td>
-                    <asp:TextBox ID="TextBox1" runat="server" Height="30px" Width="300px"></asp:TextBox>
+                    <asp:TextBox ID="TextBox1" runat="server" Height="30px" Width="300px" BorderStyle="None"></asp:TextBox>
                 </td>
             </tr>
             <tr>
                 <td class="auto-style16">Malzemeler:</td>
                 <td>
-                    <asp:TextBox ID="TextBox2" runat="server" Height="100px" TextMode="MultiLine" Width="300px" CssClass="auto-style19" ></asp:TextBox>
+                    <asp:TextBox ID="TextBox2" runat="server" Height="100px" TextMode="MultiLine" Width="300px" CssClass="auto-style19" BorderStyle="None" ></asp:TextBox>
                 </td>
             </tr>
             <tr>
                 <td class="auto-style16">Tarif:</td>
                 <td>
-                    <asp:TextBox ID="TextBox3" runat="server" Height="200px" TextMode="MultiLine" Width="300px" CssClass="auto-style19" ></asp:TextBox>
+                    <asp:TextBox ID="TextBox3" runat="server" Height="200px" TextMode="MultiLine" Width="300px" CssClass="auto-style19" BorderStyle="None" ></asp:TextBox>
                 </td>
             </tr>
             <tr>
@@ -134,7 +136,7 @@
             <tr>
                 <td class="auto-style16">&nbsp;</td>
                 <td class="auto-style18"><strong>
-                    <asp:Button ID="BtnEkle" runat="server" BackColor="#FFFF66" CssClass="auto-style17" Height="40px" Text="Ekle" Width="130px" OnClick="BtnEkle_Click" />
+                    <asp:Button ID="BtnEkle" runat="server" BackColor="#FFFF66" CssClass="auto-style17" Height="40px" Text="Ekle" Width="130px" OnClick="BtnEkle_Click" BorderStyle="None" />
                     </strong></td>
             </tr>
         </table>

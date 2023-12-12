@@ -5,6 +5,7 @@
             font-size: x-large;
             font-family: "Segoe UI";
             color: #FFFF99;
+            margin-left: 7px;
         }
         .auto-style6 {
             width: 100%;
@@ -24,7 +25,7 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div>
+    <div style="margin-top: 10px;" >
         <strong>&nbsp;<asp:Label ID="Label3" runat="server" CssClass="auto-style5" Text="Bize Ulaşın!"></asp:Label>
         </strong>
         <br />
@@ -33,7 +34,7 @@
             <tr>
                 <td class="auto-style7"><strong>Ad Soyad:</strong></td>
                 <td>
-                    <asp:TextBox ID="TxtAdSoyad" runat="server" Height="20px" Width="200px" CssClass="textbox"></asp:TextBox>
+                    <asp:TextBox ID="TxtAdSoyad" runat="server" Height="20px" Width="200px" CssClass="textbox" BorderStyle="None"></asp:TextBox>
                 </td>
             </tr>
             <tr>
@@ -60,6 +61,10 @@
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <asp:Button ID="BtnGonder" runat="server" BackColor="#FFFF99" BorderStyle="None" CssClass="auto-style8" Text="Gönder" Width="150px" Height="40px" OnClick="BtnGonder_Click" />
                     </strong></td>
+            </tr>
+            <tr>
+                <td class="auto-style7">&nbsp;</td>
+                <td>&nbsp;</td>
             </tr>
         </table>
     </div>

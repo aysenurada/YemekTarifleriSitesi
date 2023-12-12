@@ -4,6 +4,7 @@
         .auto-style5 {
             width: 100%;
             font-family: "Segoe UI";
+            padding: 7px;
         }
         .auto-style7 {
             background-color: #FFFF99;

@@ -12,6 +12,7 @@
             font-weight: bold;
             font-size: large;
             cursor: pointer;
+            border-radius: 2px;
         }
     </style>
 </asp:Content>
@@ -24,43 +25,43 @@
         <tr>
             <td class="auto-style7"><strong>Tarif Adı:</strong></td>
             <td>
-                <asp:TextBox ID="TextBox1" runat="server" Height="30px" Width="250px"></asp:TextBox>
+                <asp:TextBox ID="TextBox1" runat="server" Height="30px" Width="250px" BorderStyle="None" style="border-radius: 2px;" ></asp:TextBox>
             </td>
         </tr>
         <tr>
             <td class="auto-style7"><strong>Malzemeler:</strong></td>
             <td>
-                <asp:TextBox ID="TextBox2" runat="server" Height="200px" TextMode="MultiLine" Width="250px"></asp:TextBox>
+                <asp:TextBox ID="TextBox2" runat="server" Height="200px" TextMode="MultiLine" Width="250px" BorderStyle="None" style="border-radius: 2px; font-family: 'Segoe UI';" ></asp:TextBox>
             </td>
         </tr>
         <tr>
             <td class="auto-style7"><strong>Yapılışı:</strong></td>
             <td>
-                <asp:TextBox ID="TextBox3" runat="server" Height="200px" TextMode="MultiLine" Width="250px"></asp:TextBox>
+                <asp:TextBox ID="TextBox3" runat="server" Height="200px" TextMode="MultiLine" Width="250px" BorderStyle="None" style="border-radius: 2px; font-family: 'Segoe UI';" ></asp:TextBox>
             </td>
         </tr>
         <tr>
             <td class="auto-style7"><strong>Resim:</strong></td>
             <td>
-                <asp:FileUpload ID="FileUpload1" runat="server" Height="30px" Width="250px" />
+                <asp:FileUpload ID="FileUpload1" runat="server" Height="30px" Width="250px" BorderStyle="None" />
             </td>
         </tr>
         <tr>
             <td class="auto-style7"><strong>Öneren:</strong></td>
             <td>
-                <asp:TextBox ID="TextBox4" runat="server" Height="30px" Width="250px"></asp:TextBox>
+                <asp:TextBox ID="TextBox4" runat="server" Height="30px" Width="250px" BorderStyle="None" style="border-radius: 2px;" ></asp:TextBox>
             </td>
         </tr>
         <tr>
             <td class="auto-style7"><strong>Mail:</strong></td>
             <td>
-                <asp:TextBox ID="TextBox5" runat="server" Height="30px" Width="250px"></asp:TextBox>
+                <asp:TextBox ID="TextBox5" runat="server" Height="30px" Width="250px" BorderStyle="None" style="border-radius: 2px;" ></asp:TextBox>
             </td>
         </tr>
         <tr>
             <td class="auto-style7"><strong>Kategori:</strong></td>
             <td>
-                <asp:DropDownList ID="DropDownList1" runat="server" Height="30px" Width="250px">
+                <asp:DropDownList ID="DropDownList1" runat="server" Height="35px" Width="250px">
                 </asp:DropDownList>
             </td>
         </tr>

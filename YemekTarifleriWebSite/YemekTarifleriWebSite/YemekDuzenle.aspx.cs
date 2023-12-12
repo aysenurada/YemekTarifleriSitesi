@@ -71,7 +71,7 @@ namespace YemekTarifleriWebSite
             komut2.Parameters.AddWithValue("@p3", TextBox3.Text);
             komut2.Parameters.AddWithValue("@p4", DropDownList1.SelectedValue);
             komut2.Parameters.AddWithValue("@p5", id);
-            komut2.Parameters.AddWithValue("@p6", "~/Resimle/" + FileUpload1.FileName);
+            komut2.Parameters.AddWithValue("@p6", "~/Resimler/" + FileUpload1.FileName);
 
             komut2.ExecuteNonQuery();
 

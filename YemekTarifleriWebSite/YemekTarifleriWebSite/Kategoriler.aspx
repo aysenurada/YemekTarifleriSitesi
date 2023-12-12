@@ -41,6 +41,12 @@
             font-size: large;
             font-weight: bold;
             background-color: #FFFF99;
+            cursor: pointer;
+            border-radius: 2px;
+        }
+        .auto-style18 {
+            text-align: right;
+            font-size: medium;
         }
     </style>
 </asp:Content>
@@ -98,15 +104,15 @@
     <asp:Panel ID="Panel5" runat="server">
         <table class="auto-style7">
             <tr>
-                <td>Kategori Ad:</td>
+                <td class="auto-style18">Kategori Ad:</td>
                 <td>
-                    <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="TextBox1" runat="server" style="border-radius: 2px;" BorderStyle="None" Height="25px" Width="185px" ></asp:TextBox>
                 </td>
             </tr>
             <tr>
-                <td>Kategori İkon:</td>
+                <td class="auto-style18">Kategori İkon:</td>
                 <td>
-                    <asp:FileUpload ID="FileUpload1" runat="server" />
+                    <asp:FileUpload ID="FileUpload1" runat="server" style="border-radius: 2px;" BorderStyle="None" Height="25px" Width="185px" />
                 </td>
             </tr>
             <tr>

@@ -11,12 +11,18 @@ namespace YemekTarifleriWebSite
     public partial class GununYemegi : System.Web.UI.Page
     {
         sqlbaglanti bgl = new sqlbaglanti();
+
         protected void Page_Load(object sender, EventArgs e)
         {
             SqlCommand komut = new SqlCommand("Select * From TblYemekler Where Durum = 1", bgl.baglanti());
-            SqlDataReader oku = komut.ExecuteReader();
-            DataList2.DataSource = oku;
-            DataList2.DataBind();
+
+            try
+            {
+                SqlDataReader oku = komut.ExecuteReader();
+                DataList2.DataSource = oku;
+                DataList2.DataBind();
+            }
+            catch { }
         }
     }
 }

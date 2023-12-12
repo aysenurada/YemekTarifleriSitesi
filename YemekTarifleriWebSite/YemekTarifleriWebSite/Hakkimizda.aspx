@@ -12,6 +12,8 @@
         .auto-style6 {
             text-align: center;
             font-family: "Segoe UI";
+            margin-right: 7px;
+            margin-left: 7px;
         }
     </style>
 </asp:Content>
@@ -25,9 +27,8 @@
                 <asp:Label ID="Label3" runat="server" Text='<%# Eval("Metin") %>'></asp:Label>
             </ItemTemplate>
         </asp:DataList>
-
     </div>
     <br />
 
-    <asp:Image ID="Image1" runat="server" Height="264px" ImageUrl="~/Resimler/hakkimizda.jpg" Width="450px" />
+    <asp:Image ID="Image1" runat="server" Height="233px" ImageUrl="~/Resimler/hakkimizda.jpg" Width="436px" style="margin-left: 7px; margin-right: 7px; margin-bottom: 12px;" />
 </asp:Content>

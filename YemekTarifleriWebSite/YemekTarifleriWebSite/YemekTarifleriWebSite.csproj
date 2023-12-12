@@ -79,8 +79,10 @@
     <Content Include="Kategoriler.aspx" />
     <Content Include="MesajDetay.aspx" />
     <Content Include="Mesajlar.aspx" />
+    <Content Include="Resimler\adminAnasayfa.jpg" />
     <Content Include="Resimler\adminbanner.jpg" />
     <Content Include="Resimler\advice.png" />
+    <Content Include="Resimler\comment.png" />
     <Content Include="Resimler\delete.png" />
     <Content Include="Resimler\hakkimizda.jpg" />
     <Content Include="Resimler\header1.jpg" />
