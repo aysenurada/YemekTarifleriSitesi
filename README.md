@@ -8,7 +8,6 @@
 - HTML
 - CSS
 - Asp.Net
-- Ado.Net
 - SQL
 
 ### Kullanılan Programlar
